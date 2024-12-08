@@ -150,3 +150,6 @@ let heroes=["ironman","hulk","spiderman","thor"];
 for(let indx=0;indx<heroes.length;indx ++){
     console.log(heroes[indx]);
 }
+
+let student=["avi","omi","chaitu","suya"];
+console.log(student);
