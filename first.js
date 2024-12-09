@@ -139,68 +139,98 @@
 
 // Array 
 
-let marks=[87,97,55,87,45];
-console.log(marks);
+// let marks=[87,97,55,87,45];
+// console.log(marks);
 
-let stud_name=["Avishkar","Omkar","Chaitnya","Suyash"];
-console.log(stud_name);
+// let stud_name=["Avishkar","Omkar","Chaitnya","Suyash"];
+// console.log(stud_name);
  
-let heroes=["ironman","hulk","spiderman","thor"];
+// let heroes=["ironman","hulk","spiderman","thor"];
 
-for(let indx=0;indx<heroes.length;indx ++){
-    console.log(heroes[indx]);
+// for(let indx=0;indx<heroes.length;indx ++){
+//     console.log(heroes[indx]);
+// }
+
+// let student=["avi","omi","chaitu","suya"];
+// console.log(student);
+
+// // practice
+
+// let student1=[97,34,75,88,65,45];
+
+// let sum= 0;
+// for (let val of student1){
+//     sum+=val;
+// }
+// let Average =sum/student1.length;
+// console.log(`Average of student is ${Average}`);
+
+
+// let items=[250,645,300,900,50]
+// for(let i=0;i<items.length;i++){
+//     let offer=items[i]/10;
+//     items[i]-=offer;
+// }
+// console.log(`price after offer apply ${items}`);
+
+// // array methods
+
+// let fooditems=["Apple","banana","chips","tomato"];
+// fooditems.push("panner");
+// console.log(fooditems);
+// let deleteditem=fooditems.pop();
+// console.log(deleteditem);
+// console.log(fooditems);
+
+// let marvel=["ironman","thor","spiderman"];
+// let dc=["batman","superman"];
+// let hero=marvel.concat(dc);
+// console.log(hero);
+
+// marvel.unshift("hulk");
+// console.log(marvel);
+// let deletemarvel=marvel.shift();
+// console.log(deletemarvel);
+
+// // practise
+
+// let company=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+// company.shift();
+// console.log("remove",company);
+
+// company.splice(2,1,"ola");
+// console.log("add ",company);
+
+// company.push("Amazon");
+// console.log(company);
+
+//Function in JS
+
+// function myFunction(){
+//     console.log("Hello World");
+// }
+// myFunction()
+// function sum(a,b){
+//     s=a+b;
+//     return s;
+// }
+
+// let val=sum(2,2);
+// console.log(val);
+
+// const arrowSum=(a,b)=>{
+//     console.log(a+b);
+// }
+
+// Vowel practise 
+
+function countVowel(str){
+    let count=0;
+    for(const char of str){
+        if(char==="a"|| char==="e"||char==="i"||char==="o"||char==="u"){
+            count ++;
+        }
+    }
+    return count;
 }
-
-let student=["avi","omi","chaitu","suya"];
-console.log(student);
-
-// practice
-
-let student1=[97,34,75,88,65,45];
-
-let sum= 0;
-for (let val of student1){
-    sum+=val;
-}
-let Average =sum/student1.length;
-console.log(`Average of student is ${Average}`);
-
-
-let items=[250,645,300,900,50]
-for(let i=0;i<items.length;i++){
-    let offer=items[i]/10;
-    items[i]-=offer;
-}
-console.log(`price after offer apply ${items}`);
-
-// array methods
-
-let fooditems=["Apple","banana","chips","tomato"];
-fooditems.push("panner");
-console.log(fooditems);
-let deleteditem=fooditems.pop();
-console.log(deleteditem);
-console.log(fooditems);
-
-let marvel=["ironman","thor","spiderman"];
-let dc=["batman","superman"];
-let hero=marvel.concat(dc);
-console.log(hero);
-
-marvel.unshift("hulk");
-console.log(marvel);
-let deletemarvel=marvel.shift();
-console.log(deletemarvel);
-
-// practise
-
-let company=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
-
-company.shift();
-console.log("remove",company);
-
-company.splice(2,1,"ola");
-console.log("add ",company);
-
-company.push("Amazon");
-console.log(company);
