@@ -1,4 +1,4 @@
-//Age
+// Age
 
 // let age =2;
 // if(age>=18){
@@ -7,7 +7,7 @@
 //     console.log(age,"is not Adult ")
 // }
 
-//Grades
+// Grades
 
 // let score=prompt("Enter the score :");
 // let grade;
@@ -27,12 +27,12 @@
 // console.log("According to your score your grade is ",grade)
 
 
-//For loop 
+// For loop 
 // for (let i=1;i<=5;i++){
 //     console.log("avi");
 // }
 
-//While loop
+// While loop
 
 // let i =1;
 // while(i<=5){
@@ -40,7 +40,7 @@
 //     i++;
 // }
 
-//do-while loop
+// do-while loop
 
 // let i=1;
 // do{
@@ -49,7 +49,7 @@
 // }
 // while(i<=5);
 
-//for-of loop 
+// for-of loop 
 
 // let str="avishkar";
 // let size=0;
@@ -59,7 +59,7 @@
 // }
 // console.log("size =",size);
 
-//for-in loop
+// for-in loop
 
 // let student= {
 //     name :"Avishkar",
@@ -72,7 +72,7 @@
 //     console.log("key =",key ,"value =",student[key]);
 // }
 
-//Print all even numbers from 0 to 100.
+// Print all even numbers from 0 to 100.
 
 
 // for(let num=0;num<=100;num++){
@@ -82,7 +82,7 @@
 // }
 
 
-//Game for guessing game number
+// Game for guessing game number
 
 // let gameNum = 25;
 // let userNum=prompt("Guess the game number ")
@@ -92,12 +92,12 @@
 
 // console.log("Congrajulations you entered right number ")
 
-//string indices 
+// string indices 
 
 // let str="Avishkar";
 // console.log(str[4]);
 
-//template literals
+// template literals
 
 // let obj={
 //     item : "pencil",
@@ -107,7 +107,7 @@
 // let output = (`the cost of ${obj.item} is ${obj.price} rupees `)
 // console.log(output)
 
-//String Methods 
+// String Methods 
 
 // let str="Avishkar";
 // let newStr=str.toUpperCase();
@@ -130,14 +130,14 @@
 // let str4="ILoveJS";
 // console.log("charAt",str4.charAt(2));
 
-//Practise 
+// Practise 
 
 // let fullname=prompt("Enter your fullname :");
 // let a="@";
 // let username=a.concat(fullname)+ fullname.length;
 // console.log(username);
 
-//Array 
+// Array 
 
 let marks=[87,97,55,87,45];
 console.log(marks);
@@ -153,3 +153,54 @@ for(let indx=0;indx<heroes.length;indx ++){
 
 let student=["avi","omi","chaitu","suya"];
 console.log(student);
+
+// practice
+
+let student1=[97,34,75,88,65,45];
+
+let sum= 0;
+for (let val of student1){
+    sum+=val;
+}
+let Average =sum/student1.length;
+console.log(`Average of student is ${Average}`);
+
+
+let items=[250,645,300,900,50]
+for(let i=0;i<items.length;i++){
+    let offer=items[i]/10;
+    items[i]-=offer;
+}
+console.log(`price after offer apply ${items}`);
+
+// array methods
+
+let fooditems=["Apple","banana","chips","tomato"];
+fooditems.push("panner");
+console.log(fooditems);
+let deleteditem=fooditems.pop();
+console.log(deleteditem);
+console.log(fooditems);
+
+let marvel=["ironman","thor","spiderman"];
+let dc=["batman","superman"];
+let hero=marvel.concat(dc);
+console.log(hero);
+
+marvel.unshift("hulk");
+console.log(marvel);
+let deletemarvel=marvel.shift();
+console.log(deletemarvel);
+
+// practise
+
+let company=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+company.shift();
+console.log("remove",company);
+
+company.splice(2,1,"ola");
+console.log("add ",company);
+
+company.push("Amazon");
+console.log(company);
