@@ -238,32 +238,68 @@
 
 // forEach loop in array
 
-let arr=[1,2,3,4,5];
-arr.forEach((valu) => {
-    console.log(valu);
-});
+// let arr=[1,2,3,4,5];
+// arr.forEach((valu) => {
+//     console.log(valu);
+// });
 
-// practice 
+// // practice 
 
-let num1 =[1,2,3,4,5,6];
+// let num1 =[1,2,3,4,5,6];
 
-num1.forEach((vak)=>{
-    console.log(vak*vak);
+// num1.forEach((vak)=>{
+//     console.log(vak*vak);
     
-})
+// })
 
 // map method 
 
-let nums=[1,2,3,4,5,6,7];
-let newarr=nums.map((val)=>{
-    return val*val;
-})
+// let nums=[1,2,3,4,5,6,7];
+// let newarr=nums.map((val)=>{
+//     return val*val;
+// })
 
-console.log(newarr);
+// console.log(newarr);
 
 //filter method 
 
-let newarray=nums.filter((val1)=>{
-    return val1%2==0;
+// let newarray=nums.filter((val1)=>{
+//     return val1%2==0;
+// })
+// console.log(newarray);
+
+//Reduse method 
+
+// let arr1=[1,2,3,4];
+
+// const output=arr1.reduce((res,curr)=>{
+//     return res * curr;
+// });
+// console.log(output);
+
+//pratice
+
+// let stud=[98,67,87,90,78,100];
+
+// let stud1=stud.filter((mark)=>{
+//     return mark >=90;
+// });
+// console.log(stud1);
+
+let n=prompt("Enter the number :");
+
+let arr2=[];
+for(let i=1;i<=n;i++){
+    arr2[i-1]=i;
+}
+console.log(arr2);
+
+let sum1=arr2.reduce((pres,current)=>{
+    return pres+current;
 })
-console.log(newarray);
+console.log("sum =",sum1);
+
+let factorial=arr2.reduce((pres,current)=>{
+    return pres*current;
+})
+console.log("factorial =",factorial);
