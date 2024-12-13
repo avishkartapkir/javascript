@@ -286,20 +286,52 @@
 // });
 // console.log(stud1);
 
-let n=prompt("Enter the number :");
+// //practice Question 2
+// let n=prompt("Enter the number :");
 
-let arr2=[];
-for(let i=1;i<=n;i++){
-    arr2[i-1]=i;
+// let arr2=[];
+// for(let i=1;i<=n;i++){
+//     arr2[i-1]=i;
+// }
+// console.log(arr2);
+
+// let sum1=arr2.reduce((pres,current)=>{
+//     return pres+current;
+// })
+// console.log("sum =",sum1);
+
+// let factorial=arr2.reduce((pres,current)=>{
+//     return pres*current;
+// })
+// console.log("factorial =",factorial);
+
+// DOM document object model 
+
+let heading =document.getElementsByClassName("heading");
+console.log(heading);
+console.dir(heading);
+
+// query selector
+let elem1=document.querySelector(".heading");
+console.dir(elem1);
+
+let elem=document.querySelector("#header");
+console.dir(elem);
+
+// practice
+
+let h2=document.querySelector("h2");
+console.dir(h2.innerText);
+
+h2.innerText=h2.innerText + " from college ! ";
+
+let divs=document.querySelectorAll(".box");
+
+let indx=1;
+
+for (div of divs){
+    div.innerText = `unique value ${indx}`;
+    indx++;
 }
-console.log(arr2);
 
-let sum1=arr2.reduce((pres,current)=>{
-    return pres+current;
-})
-console.log("sum =",sum1);
 
-let factorial=arr2.reduce((pres,current)=>{
-    return pres*current;
-})
-console.log("factorial =",factorial);
