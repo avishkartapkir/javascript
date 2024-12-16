@@ -305,33 +305,67 @@
 // })
 // console.log("factorial =",factorial);
 
-// DOM document object model 
+// // DOM document object model 
 
-let heading =document.getElementsByClassName("heading");
-console.log(heading);
-console.dir(heading);
+// let heading =document.getElementsByClassName("heading");
+// console.log(heading);
+// console.dir(heading);
 
-// query selector
-let elem1=document.querySelector(".heading");
-console.dir(elem1);
+// // query selector
+// let elem1=document.querySelector(".heading");
+// console.dir(elem1);
 
-let elem=document.querySelector("#header");
-console.dir(elem);
+// let elem=document.querySelector("#header");
+// console.dir(elem);
 
 // practice
 
-let h2=document.querySelector("h2");
-console.dir(h2.innerText);
+// let h2=document.querySelector("h2");
+// console.dir(h2.innerText);
 
-h2.innerText=h2.innerText + " from college ! ";
+// h2.innerText=h2.innerText + " from college ! ";
 
-let divs=document.querySelectorAll(".box");
+// let divs=document.querySelectorAll(".box");
 
-let indx=1;
+// let indx=1;
 
-for (div of divs){
-    div.innerText = `unique value ${indx}`;
-    indx++;
-}
+// for (div of divs){
+//     div.innerText = `unique value ${indx}`;
+//     indx++;
+// }
+
+//Attribute 
+
+// let h3=document.querySelector("h3");
+// // console.log(h3.getAttribute("id")); 
+
+// let di=document.querySelector(".box");
+// console.log(di.setAttribute("class","squarebox"));
+
+//Style
+let div=document.querySelector("div");
+
+div.style.backgroundColor="red";
+
+//insert Elements
+
+let newBtn=document.createElement("button");
+newBtn.innerText="click me ";
+console.log(newBtn);
+
+let div=document.querySelector("div");
+div.append(newBtn);
+div.prepend(newBtn);
+div.before()
+
+let head=document.querySelector("h1");
+head.remove();
 
 
+let btn=document.createElement("button");
+btn.innerText="Click Me!";
+btn.style.backgroundColor="red";
+btn.style.color="white";
+console.log(btn);
+
+document.querySelector("body").prepend(btn);
