@@ -343,29 +343,81 @@
 // console.log(di.setAttribute("class","squarebox"));
 
 //Style
-let div=document.querySelector("div");
+// let div=document.querySelector("div");
 
-div.style.backgroundColor="red";
+// div.style.backgroundColor="red";
 
-//insert Elements
+// //insert Elements
 
-let newBtn=document.createElement("button");
-newBtn.innerText="click me ";
-console.log(newBtn);
+// let newBtn=document.createElement("button");
+// newBtn.innerText="click me ";
+// console.log(newBtn);
 
-let div=document.querySelector("div");
-div.append(newBtn);
-div.prepend(newBtn);
-div.before()
+// let div=document.querySelector("div");
+// div.append(newBtn);
+// div.prepend(newBtn);
+// div.before()
 
-let head=document.querySelector("h1");
-head.remove();
+// let head=document.querySelector("h1");
+// head.remove();
 
 
-let btn=document.createElement("button");
-btn.innerText="Click Me!";
-btn.style.backgroundColor="red";
-btn.style.color="white";
-console.log(btn);
+// let btn=document.createElement("button");
+// btn.innerText="Click Me!";
+// btn.style.backgroundColor="red";
+// btn.style.color="white";
+// console.log(btn);
 
-document.querySelector("body").prepend(btn);
+// document.querySelector("body").prepend(btn);
+
+
+//Event handling 
+
+let btn1=document.querySelector("#btn1");
+btn1.onclick=()=>{
+    console.log("btn1 was clicked");
+    let a= 24;
+    a++;
+    console.log(a);
+}
+
+let div1=document.querySelector(".box1");
+div1.onmouseover=()=>{
+    console.log("you are inside div");
+}
+
+//Event Listener
+
+btn1.addEventListener("click",()=>{
+    console.log("button was clicked -handler 1");
+});
+btn1.addEventListener("click",()=>{
+    console.log("button was clicked -handler 2");
+});
+
+const handler3=()=>{
+    console.log("button was clicked -handler 3")
+}
+btn1.addEventListener("click",handler3);
+
+
+btn1.removeEventListener("click",handler3);
+
+
+//practice
+
+let changemode=document.querySelector("#mode");
+
+let  currmode= "light";
+
+changemode.addEventListener("click",()=>{
+    if(currmode === "light" ){
+        currmode="dark";
+        document.querySelector("body").style.backgroundColor="black";
+    }
+    else{
+        currmode="light";
+        document.querySelector("body").style.backgroundColor="white";   
+     }
+     console.log(currmode);
+})
