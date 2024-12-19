@@ -373,51 +373,64 @@
 
 //Event handling 
 
-let btn1=document.querySelector("#btn1");
-btn1.onclick=()=>{
-    console.log("btn1 was clicked");
-    let a= 24;
-    a++;
-    console.log(a);
-}
+// let btn1=document.querySelector("#btn1");
+// btn1.onclick=()=>{
+//     console.log("btn1 was clicked");
+//     let a= 24;
+//     a++;
+//     console.log(a);
+// }
 
-let div1=document.querySelector(".box1");
-div1.onmouseover=()=>{
-    console.log("you are inside div");
-}
+// // let div1=document.querySelector(".box1");
+// // div1.onmouseover=()=>{
+// //     console.log("you are inside div");
+// // }
 
-//Event Listener
+// //Event Listener
 
-btn1.addEventListener("click",()=>{
-    console.log("button was clicked -handler 1");
-});
-btn1.addEventListener("click",()=>{
-    console.log("button was clicked -handler 2");
-});
+// btn1.addEventListener("click",()=>{
+//     console.log("button was clicked -handler 1");
+// });
+// btn1.addEventListener("click",()=>{
+//     console.log("button was clicked -handler 2");
+// });
 
-const handler3=()=>{
-    console.log("button was clicked -handler 3")
-}
-btn1.addEventListener("click",handler3);
-
-
-btn1.removeEventListener("click",handler3);
+// const handler3=()=>{
+//     console.log("button was clicked -handler 3")
+// }
+// btn1.addEventListener("click",handler3);
 
 
-//practice
+// btn1.removeEventListener("click",handler3);
+// //practice
 
-let changemode=document.querySelector("#mode");
+// let changemode=document.querySelector("#mode");
 
-let  currmode= "light";
+// let  currmode= "light";
 
-changemode.addEventListener("click",()=>{
-    if(currmode === "light" ){
-        currmode="dark";
-        document.querySelector("body").style.backgroundColor="black";
+// changemode.addEventListener("click",()=>{
+//     if(currmode === "light" ){
+//         currmode="dark";
+//         document.querySelector("body").style.backgroundColor="black";
+//     }
+//     else{
+//         currmode="light";
+//         document.querySelector("body").style.backgroundColor="white";   
+//      }
+//      console.log(currmode);
+// })
+
+//homework 
+
+let div2=document.querySelector("#box");
+let mouseover="red";
+div2.addEventListener("mouseover",() =>{
+    if(mouseover === "red"){
+        mouseover="orange";
+        document.querySelector("#box").style.backgroundColor="orange";
+    }else{
+        mouseover="red";
+        document.querySelector("#box").style.backgroundColor="red";
     }
-    else{
-        currmode="light";
-        document.querySelector("body").style.backgroundColor="white";   
-     }
-     console.log(currmode);
-})
+    console.log(mouseover);
+});
